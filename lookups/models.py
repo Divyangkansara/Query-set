@@ -8,3 +8,7 @@ class Student(models.Model):
     marks = models.IntegerField()
     # passdate = models.DateField()
     # admdatetime = models.DateTimeField()
+
+class Teacher(models.Model):
+    name = models.CharField(max_length=70)
+    department = models.CharField(max_length=70)

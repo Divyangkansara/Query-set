@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, thead,th,tbody,tr,td{
+            border: 1px solid black;
+            
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <th>ID</th>
+            <th>Name</th>
+           <th>Department</th>
+        </thead>
+        <tbody>
+            {% for teacher in teacher_data %}
+            <tr>
+                <td>{{teacher.id}}</td>
+                <td>{{teacher.name}}</td>
+                <td>{{teacher.department}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
